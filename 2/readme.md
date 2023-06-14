@@ -31,7 +31,10 @@ Ford-Fulkerson Algorithm的方法如下：
 5. 重複上述步驟，直到再也沒有Augmenting Paths為止。
 
 以下為執行結果
-![alt text](pics\augmenting_path.jpg "augmenting_path")
+![alt text](pics/augmenting_path.jpg "augmenting_path")
 
 ### 再來求最小的s-t cut ###
 minimium cut = maximum flow=**4**
+
+****************************************************************
+[回主頁](https://github.com/Noircoda/algorithm_final/blob/82912cf601b3bac25ea72d4023940b8c1a658697)

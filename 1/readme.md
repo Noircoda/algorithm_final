@@ -2,7 +2,7 @@
 ## **1.(a)** ##
 
 [1(a)Code](https://github.com/Noircoda/algorithm_final/blob/bc009eeec67ea4f6c57acfac20a50c03f788c274/1/1(a).py)
-### 以上為1(a)code  ###
+#### 以上為1(a)code  ####
 使用了 defaultdict(list) 的功能:Dictionary來表示有向圖的鄰接表。
 
 使用**DFS**來判斷指定頂點是否為source vertex。在 ` is_source_vertex()` 函式中，建立一個boolean的 visited 列表，用於追蹤每個頂點的訪問狀態。最後，檢查 visited 列表中是否還存在未被訪問的頂點，如果有，則該頂點不是source vertex，否則，該頂點是source vertex。
@@ -14,9 +14,9 @@
 ****************************************************************
 ## **1.(b)** ##
 
-[1(b)Code]([1\1(a).py](https://github.com/Noircoda/algorithm_final/blob/bc009eeec67ea4f6c57acfac20a50c03f788c274/1/1(b).py))
+[1(b)Code](https://github.com/Noircoda/algorithm_final/blob/bc009eeec67ea4f6c57acfac20a50c03f788c274/1/1(b).py)
 
-### 以上為1(b)code  ###
+#### 以上為1(b)code  ####
 
 一樣使用Dictionary來表示有向圖的鄰接表 但是使用**拓樸**的概念
 
@@ -32,8 +32,11 @@
 
 ## **1.(c)** ##  
 
-[1(c)Code]([1\1(a).py](https://github.com/Noircoda/algorithm_final/blob/bc009eeec67ea4f6c57acfac20a50c03f788c274/1/1(c).py))  
+[1(c)Code](https://github.com/Noircoda/algorithm_final/blob/bc009eeec67ea4f6c57acfac20a50c03f788c274/1/1(c).py)
 
-### 以上為1(c)code  ###  
+#### 以上為1(c)code  ####  
 
 由於可能包含有向環，此題使用DFS
+
+********************************
+[回主頁](https://github.com/Noircoda/algorithm_final/blob/82912cf601b3bac25ea72d4023940b8c1a658697)
