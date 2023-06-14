@@ -2,7 +2,7 @@
 
 ## **2.(a)** ##
 
-[ford_fulkerson](https://github.com/Noircoda/algorithm_final/blob/main/2/ford_fulkerson.py)
+[code](https://github.com/Noircoda/algorithm_final/blob/main/2/ford_fulkerson.py)
 ### 以上為2(a)code  ###
 使用了 adjacency matrix 來表示graph。
 
@@ -19,12 +19,13 @@
 $$故得maximum flow為30$$
 ****************************************************************
 ## **2.(b)** ##  
+[code](https://github.com/Noircoda/algorithm_final/blob/main/2/augmenting_path.py)  
 
 本題一樣利用Ford-Fulkerson演算法，每次找到增廣路徑後，將該增廣路徑印出。  
 Ford-Fulkerson Algorithm的方法如下：
 
 1. 在Residual Networks上尋找Augmenting Paths。
-2. 若以BFS()尋找，便能確保每次找到的Augmenting Paths一定經過「最少的edge」。
+2. 若以`BFS()`尋找，便能確保每次找到的Augmenting Paths一定經過「最少的edge」。
 3. 找到Augmenting Paths上的「最小residual capacity」加入總flow。
 4. 再以「最小residual capacity」更新Residual Networks上的edge之residual capacity。
 5. 重複上述步驟，直到再也沒有Augmenting Paths為止。
