@@ -1,42 +1,7 @@
 # Final #
 ## **1.(a)** ##
 
-```python
-from collections import defaultdict
-
-def is_source_vertex(V, E, v):
-    graph = defaultdict(list)
-
-    for u, v in E:
-        graph[u].append(v)
-
-    visited = [False] * len(V)
-
-    def dfs(vertex):
-        visited[vertex] = True
-        for neighbor in graph[vertex]:
-            if not visited[neighbor]:
-                dfs(neighbor)
-
-    dfs(v)
-
-    if any(not visited[i] for i in range(len(V))):
-        return False
-    else:
-        return True
-
-# 測試程式碼
-if __name__ == '__main__':
-    V = [0, 1, 2, 3, 4]
-    E = [(0, 1), (1, 2), (2, 3), (3, 4)]
-
-    if is_source_vertex(V, E, 0):
-        print("頂點0是source vertex")
-    else:
-        print("頂點0不是source vertex")
-
-```
-
+[1(a)Code](https://github.com/Noircoda/algorithm_final/blob/bc009eeec67ea4f6c57acfac20a50c03f788c274/1/1(a).py)
 ### 以上為1(a)code  ###
 使用了 defaultdict(list) 的功能:Dictionary來表示有向圖的鄰接表。
 
@@ -49,56 +14,7 @@ if __name__ == '__main__':
 ****************************************************************
 ## **1.(b)** ##
 
-``` python
-from collections import deque
-
-def has_source_vertex(graph):
-    in_degree = {v: 0 for v in graph}
-    queue = deque()
-
-
-    for v in graph:
-        for neighbor in graph[v]:
-            in_degree[neighbor] += 1
-
-    # in-degree=0 的頂點加入queue
-    for v in graph:
-        if in_degree[v] == 0:
-            queue.append(v)
-
-    sources = set()
-
-    # 拓撲排序
-    while queue:
-        vertex = queue.popleft()
-        sources.add(vertex)
-
-        for neighbor in graph[vertex]:
-            in_degree[neighbor] -= 1
-            if in_degree[neighbor] == 0:
-                queue.append(neighbor)
-
-    return len(sources) > 0
-
-# 測試
-graph = {
-    'A': ['B', 'C'],
-    'B': ['D'],
-    'C': ['D'],
-    'D': []
-}
-
-print(has_source_vertex(graph))  # True
-
-graph = {
-    'A': ['B', 'C'],
-    'B': ['D'],
-    'C': ['D'],
-    'D': ['A']  # 含有向循環
-}
-
-print(has_source_vertex(graph))  # False
-```
+[1(b)Code]([1\1(a).py](https://github.com/Noircoda/algorithm_final/blob/bc009eeec67ea4f6c57acfac20a50c03f788c274/1/1(b).py))
 
 ### 以上為1(b)code  ###
 
@@ -114,8 +30,10 @@ print(has_source_vertex(graph))  # False
 
 **********
 
-## **1.(c)** ##
-```python
+## **1.(c)** ##  
 
-```
+[1(c)Code]([1\1(a).py](https://github.com/Noircoda/algorithm_final/blob/bc009eeec67ea4f6c57acfac20a50c03f788c274/1/1(c).py))  
+
+### 以上為1(c)code  ###  
+
 由於可能包含有向環，此題使用DFS
