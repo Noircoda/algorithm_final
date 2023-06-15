@@ -1,6 +1,6 @@
 # **4.** #  
 
-## 4(a) ##
+## 4(a) ##  
 
 [4(a)code](https://github.com/Noircoda/algorithm_final/blob/main/4/max_length.py)
 要找到黃金的最大長度，使用動態規劃來考慮所有可能的配方組合及其使用順序。
