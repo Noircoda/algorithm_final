@@ -36,7 +36,9 @@
 
 #### 以上為1(c)code  ####  
 
-由於可能包含有向環，此題使用DFS
+由於可能包含有向環，此題使用kosaraju’s algorithm 找出SSC
+做兩次DFS time = O(2(|V| + |E|))
+時間複雜度為 O(|V| + |E|)
 
 ********************************
 [回主頁](https://github.com/Noircoda/algorithm_final/blob/82912cf601b3bac25ea72d4023940b8c1a658697)
